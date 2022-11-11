@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3606676 */
+  src: url('iconfont.woff2?t=1666360112924') format('woff2'),
+       url('iconfont.woff?t=1666360112924') format('woff'),
+       url('iconfont.ttf?t=1666360112924') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fenxiang:before {
+  content: "\e86e";
+}
+
+.icon-jiangbei:before {
+  content: "\e616";
+}
+
+.icon-xiangzuojiantou:before {
+  content: "\e660";
+}
+
+.icon-yanjing:before {
+  content: "\e629";
+}
+
+.icon-duihao:before {
+  content: "\e62a";
+}
+
+.icon-dianhua:before {
+  content: "\e6eb";
+}
+
+.icon-fax:before {
+  content: "\e620";
+}
+
+.icon-xinlangweibo:before {
+  content: "\e602";
+}
+
+.icon-qqkongjian:before {
+  content: "\e66f";
+}
+
+.icon-QQ:before {
+  content: "\e882";
+}
+
+.icon-tencent-weibo:before {
+  content: "\e921";
+}
+
+.icon-xiangyou2:before {
+  content: "\e777";
+}
+
+.icon-sousuo:before {
+  content: "\e601";
+}
+
+.icon-fangzi:before {
+  content: "\e614";
+}
+
+.icon-ditu:before {
+  content: "\e60b";
+}
+
+.icon-yiban:before {
+  content: "\e8da";
+}
+
+.icon-zhixiangyou:before {
+  content: "\e8f4";
+}
+
+.icon-star:before {
+  content: "\e9a1";
+}
+
+.icon-weixin:before {
+  content: "\e61a";
+}
+
+.icon-xiangshang:before {
+  content: "\e776";
+}
+
+.icon-youxiang:before {
+  content: "\e908";
+}
+
+.icon-24gl-telephone:before {
+  content: "\e953";
+}
+
+.icon-60:before {
+  content: "\e692";
+}
+
+.icon-quxiao:before {
+  content: "\e672";
+}
+
+.icon-xiangyou-copy:before {
+  content: "\e623";
+}
+
+.icon-xiangyoujiantou:before {
+  content: "\e65f";
+}
+
+.icon-cuowuguanbiquxiao-yuankuang:before {
+  content: "\e8e8";
+}
+
+.icon-xiangxia:before {
+  content: "\e600";
+}
+

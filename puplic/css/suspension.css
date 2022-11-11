@@ -1,0 +1,80 @@
+.suspen {
+	position: fixed;
+	z-index: 999;
+	right: 5px;
+	top: 20%;
+}
+
+.suspen li {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    background: #ccc;
+    position: relative;
+    height: 40px;
+}
+}
+.suspen li a{
+	display: block;
+	overflow: hidden;
+	
+}
+.suspen li a i {
+	color: #fff;
+	text-align: center;
+	width: 40px;
+	overflow: hidden;
+	float: left;
+	font-size: 35px;
+}
+.suspen-info{
+	font-size: 18px;
+	    color: #fff;
+	    overflow: hidden;
+	    line-height: 55px;
+	    float: left;
+	    position: absolute;
+	    right: 65px;
+	    background: #e60012;
+	    top: 0;
+	    bottom: 0;
+		
+	    height: 50px;
+	    line-height: 50px;
+	    max-width: 0;
+	    white-space: nowrap;
+	    font-weight: 300;
+		transition: all .5s;
+}
+.suspen-img{
+	    position: absolute;
+	    width: 100px;
+	    left: -100px;
+	    bottom: 0;
+	    overflow: hidden;
+	    max-height: 0;
+	    opacity: 0;
+		transition: all .5s;
+}
+.suspen-img img{
+	width: 100%;
+	height: 100%;
+}
+.suspen li:hover a .suspen-info{
+	max-width: 1000px;
+	padding: 0 10px;
+}
+.suspen li:hover a .suspen-img{
+	max-height: 200px;
+	opacity: 1;
+}
+.suspen li a::before{
+	display: table;
+	clear: both;
+	content: "";
+}
+.suspen li a::after{
+	display: table;
+	clear: both;
+	content: "";
+}
