@@ -1,0 +1,493 @@
+main {
+	width: 100%;
+	background-color: #eee;
+}
+
+.subpage {
+	position: relative;
+	height: 560px;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.bgimg {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: no-repeat center/cover;
+	opacity: 0.6;
+	background-image: url(../img/c7cead05-5101-4141-94b9-98f5774293fd.jpg);
+	background-position-y: 50%;
+}
+
+.text {
+	position: absolute;
+	width: 90%;
+	color: #fff;
+	text-align: center;
+	top: 54%;
+	left: 5%;
+	line-height: 1.6;
+	transform: translate(0, -50%);
+	z-index: 4;
+}
+
+.text div:nth-child(1) {
+	font-size: 40px;
+	font-weight: 300;
+	letter-spacing: 5px;
+}
+
+.text div:nth-child(2) {
+	height: 2px;
+	width: 50px;
+	background: #fff;
+	margin: 20px auto;
+}
+
+.text div:nth-child(3) {
+	font-size: 26px;
+
+	letter-spacing: 2px;
+	font-weight: 300;
+}
+
+.subpage-bo-box {
+	width: 100%;
+	background: #fff;
+}
+
+.subpage-bo {
+	max-width: 1620px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.subpage-bo ul {
+	display: flex;
+}
+
+.subpage-bo ul li a {
+	display: block;
+	margin: 25px 0;
+	padding: 0 20px;
+	position: relative;
+	color: #333;
+	text-transform: uppercase;
+	float: left;
+	font-size: 16px;
+	transition: all 0.5s;
+	border-right: #ccc solid 1px;
+}
+
+.subpage-bo ul li a:hover {
+	color: red;
+}
+
+.subpage-bo ul li a::after {
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	width: 0%;
+	height: 3px;
+	display: block;
+	background: #e60012;
+	content: "";
+	transform: translateX(-50%);
+	transition: all .5s;
+}
+
+.subpage-bo ul li a:hover::after {
+	width: 80%;
+}
+
+.subpage-box {
+	display: flex;
+	margin: 25px 0;
+	font-size: 14px;
+}
+
+.subpage-box div:nth-child(2) {
+	margin: 0 5px;
+}
+
+.subpage-box div a {
+	color: #333;
+
+}
+
+.icon-ditu {
+	color: red;
+}
+
+/* 新闻 */
+#jsonTip {
+	max-width: 1620px;
+	width: 100%;
+	background: #fff;
+	margin: 60px auto;
+	padding: 30px 0;
+}
+
+#jsonTip ul {
+	flex-wrap: wrap;
+	padding: 0 45px;
+}
+
+#jsonTip ul li {
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #DDD;
+	padding: 30px 0;
+}
+
+#jsonTip ul li:hover .jsonleft h3 {
+	color: #e60012;
+}
+
+#jsonTip ul li:hover .jsonright a {
+	color: #e60012;
+}
+
+#jsonTip ul li:hover .jsonright {
+	padding-left: 80px;
+}
+
+#jsonTip ul li:hover .jsonright:before {
+	width: 60px;
+}
+
+#jsonTip ul li:hover .jsonimg img {
+	transform: scale(1.1);
+}
+
+#jsonTip ul li:hover .icon-zhixiangyou {
+
+	margin-top: 10px;
+	background: #e60012;
+	color: #fff;
+}
+
+.jsoncon {
+	display: flex;
+}
+
+.jsonleft {
+	width: 100px;
+}
+
+.icon-zhixiangyou {
+	padding: 6px 11px;
+	border: 1px solid transparent;
+	transition: all .5s ease;
+	color: #ccc;
+}
+
+.jsonleft h3 {
+	display: block;
+	color: #999;
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 0px 0 30px;
+	transition: all .5s ease;
+}
+
+.jsonright {
+	padding: 0 30px 0 60px;
+	position: relative;
+	transition: all .5s ease;
+	overflow: hidden;
+}
+
+.jsonright:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 1rem;
+	display: block;
+	width: 40px;
+	height: 1px;
+	background: #aaa;
+	transition: all .5s ease;
+}
+
+.jsonright a {
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	color: #000;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	transition: all .5s ease;
+}
+
+.jsonright span {
+	line-height: 45px;
+	height: 48px;
+	font-size: 0.875rem;
+	overflow: hidden;
+	color: #999;
+	transition: 600ms;
+}
+
+.jsonimg {
+	width: 165px;
+	height: 110px;
+	overflow: hidden;
+}
+
+.jsonimg img {
+	width: 100%;
+	height: 100%;
+
+	transition: all .5s ease;
+}
+
+@media only screen and (max-width:768px) {
+	.subpage-bo {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.subpage-show {
+		width: 100%;
+		display: block;
+	}
+
+	.subpage-show-tit {
+		display: block;
+		width: 100%;
+		border: none;
+		border-radius: 0;
+		text-align: left;
+		background: #333;
+		padding: 20px 0;
+		color: #fff;
+	}
+
+	.category {
+
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 100%;
+		transition: left .3s;
+		z-index: 9999;
+		display: flex;
+	}
+
+	.category-hides {
+		left: 0;
+	}
+
+	.category-hidess {
+		left: 100%;
+	}
+
+	.category-icon {
+		background: #333;
+		width: 10%;
+		height: 100%;
+		padding: 0;
+	}
+
+	.category-icon i {
+		width: 100%;
+		height: 40px;
+		display: block;
+		text-align: center;
+		line-height: 40px;
+		margin-top: 120px;
+		color: #fff;
+	}
+
+	.category-text {
+		background: #fff;
+		overflow-y: auto;
+		width: 90%;
+		height: 100%;
+	}
+
+	.category-text-div {
+		padding: 5px 0;
+		display: flex;
+	}
+
+	.category-text div a {
+		flex: 1;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		padding: 10px 5px;
+		color: #707070;
+	}
+
+	.category-text-hide {
+		padding: 20px 0 !important;
+	}
+
+	.category-text div:hover {
+		background: red;
+	}
+
+	.category-text div i {
+		display: inline-block;
+		width: 30px;
+		line-height: 40px;
+	}
+
+	.category-text-hide {
+
+		background: #efeff4;
+		display: none;
+	}
+
+	.category-hide-show {
+		display: block !important;
+	}
+
+	.category-text-hide a {
+		padding-left: 20px !important;
+	}
+
+	.subpage-bo ul {
+		display: none;
+	}
+
+	.subpage-main {
+		flex-wrap: wrap;
+	}
+
+	.subpage-main-text {
+		width: 100%;
+	}
+
+	.subpage-main-text div:nth-child(1) {
+		font-size: 24px;
+	}
+
+	.subpage-main-text div:nth-child(2) {
+		font-size: 20px;
+	}
+
+	.text-con div p {
+		font-size: 12px;
+	}
+
+	.subpage-main-img {
+		width: 100%;
+	}
+
+	#jsonTip ul li {
+		flex-wrap: wrap;
+
+	}
+
+	.jsoncon {
+		width: 100%;
+	}
+
+	.jsonleft {
+		width: 70px;
+	}
+
+	.jsonimg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.jsonright {
+		width: 100%;
+	}
+
+	.jsonright span {
+		display: inline-block;
+	}
+
+	#jsonTip ul li:hover .jsonright {
+		padding-left: 0px;
+	}
+
+	#suspen {
+		display: none;
+	}
+}
+
+@media only screen and (min-width:769px) {
+
+	.subpage-show {
+		display: none;
+	}
+}
+
+/* //#page 的page是您自定义的id */
+#page {
+	margin: 20px auto;
+	color: #666;
+	display: block;
+	text-align: center;
+}
+
+/* //所有li的样式 */
+#page li {
+	display: inline-block;
+	min-width: 30px;
+	height: 28px;
+	cursor: pointer;
+	color: #666;
+	font-size: 13px;
+	line-height: 28px;
+	background-color: #f9f9f9;
+	border: 1px solid #dce0e0;
+	text-align: center;
+	margin: 0 4px;
+	appearance: none;
+	border-radius: 5px;
+}
+
+/* //上一页和下一页的样式 */
+.xl-nextPage,
+.xl-prevPage {
+	width: 60px;
+	color: #e60012;
+	height: 28px;
+}
+
+/* //失效状态样式 */
+#page li.xl-disabled {
+	opacity: .5;
+	cursor: no-drop;
+}
+
+/* //当前页码显示状态 */
+#page li.xl-active {
+	background-color: #e60012;
+	border-color: #e60012;
+	color: #FFF
+}
+
+/* //跳转文字 */
+#page li.xl-jumpText {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+	opacity: 1;
+}
+
+/* //跳转按钮 */
+#page li.xl-jumpButton {
+	padding: 0 5px;
+}
+
+#page li:hover {
+	background: #e60012;
+	color: #fff;
+}
